@@ -4,4 +4,4 @@ function solve(s) {
   return count_high > count_low ? s.toUpperCase() : s.toLowerCase();
 }
 
-console.log(solve("code"))
+console.log(solve("code"), solve("COde"));

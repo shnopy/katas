@@ -4,4 +4,4 @@ function alternateCase(s) {
   return res;
 }
 
-console.log(alternateCase("abc"))
+console.log(alternateCase("abcJ"))
