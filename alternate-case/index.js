@@ -1,7 +1,8 @@
 function alternateCase(s) {
-  let res = '';
-  for (char in s) res += s[char] === s[char].toUpperCase() ? s[char].toLowerCase() : s[char].toUpperCase()
+  let res = [], a = '', b = '';
+  for (char in s) a += char % 2 ? s[char].toLowerCase() : s[char].toUpperCase(), b += char % 2 ? s[char].toUpperCase() : s[char].toLowerCase()
+  res.push(a, b);
   return res;
 }
 
-console.log(alternateCase("abcJ"))
+console.log(alternateCase("abcabcdef"))
